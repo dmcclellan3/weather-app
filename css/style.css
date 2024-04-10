@@ -4,16 +4,33 @@ h1 {
 }
 .flex-container {
   display: flexbox;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 300px;
   height: 600px;
   background-color: white;
-  padding-top: auto;
+  padding-top: 10px; 
   margin: auto;
   border-radius: 10px;
   box-shadow: 0 0 20px;
+  text-align: center;
   
+  
+}
+#city-box{
+  padding-top: 10px;
+  background-color: rgb(251, 175, 33);
+  font: bold;
+}
+
+#city-field{
+  background-color: blue;
+  padding: 20px;
+}
+
+#temperature{
+  padding: 15px;
+  background-color: rgb(251, 175, 33);
 }
 
 body{
