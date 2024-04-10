@@ -7,12 +7,22 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 300px;
-  height: 500px;
+  height: 600px;
   background-color: white;
-  padding: auto;
-  margin:auto;
+  padding-top: auto;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px;
+  
 }
 
 body{
   background-color: rgb(152, 200, 241);
+  padding-top: 90px;
+  margin: auto;
+  border: black;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+  
 }
