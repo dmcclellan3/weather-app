@@ -11,26 +11,28 @@ const infoField = document.getElementById("info-field")
 
 weatherBtn.addEventListener("click", () => {
 
-    getWeather()
+    getWeather(zipCodeInsert.value)
 
     
 
 })
 
-function getWeather () {
-    axios.get('https://api.openweathermap.org/data/2.5/weather?zip=40504,US&appid=8d8a35e78ec3babb4db1abb8150ab7e4')
+function getWeather (zipCode) {
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?zip=${zipCode},US&appid=8d8a35e78ec3babb4db1abb8150ab7e4`)
         .then(response => {
+            
             console.log('data: ', response.data)
             let temp = response.data.main.temp
             cityField.textContent = response.data.name
             kelvinField.textContent = `${Math.round(response.data.main.temp)}K`
             fahrenheitField.textContent = `${Math.round((((temp - 273.15) * 1.8) + 32))}F`
             celsiusField.textContent = `${Math.round((temp - 273.15))}C`
-            conditionField.textContent = response.data.weather[0].main
+            conditionField.textContent = response.data.weather[0].description
             
         })
         .catch(error => {
         console.log('error: ', error)
+        alert(`Invalid Zip Code: ${error}`)
         
 
     })

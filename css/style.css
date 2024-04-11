@@ -111,8 +111,12 @@ button{
 
 body{
   /* background-color: rgb(152, 200, 241); */
-  padding-top: 90px;
-  /* margin: auto; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 30px;
+  border: 20px;
   /* border: black; */
   background-color: white;
   /* background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%); */
