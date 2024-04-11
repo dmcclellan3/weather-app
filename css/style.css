@@ -97,6 +97,15 @@ h1 {
 
 }
 
+button{
+  background-color: rgb(80, 208, 166);
+}
+
+/* #button-text{
+  justify-content: center;
+  align-items: center;
+} */
+
 
 
 
