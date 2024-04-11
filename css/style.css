@@ -1,5 +1,5 @@
 h1 {
-  color: pink;
+  color: black;
   text-align: center;
 }
 .flex-container {
@@ -7,13 +7,13 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 300px;
-  height: 500px;
+  /* height: ; */
   background-color: white;
   padding-top: 10px; 
   margin: auto;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   border: 20px;
-  box-shadow: 0 0 20px;
+  /* box-shadow: 0 0 20px; */
   text-align: center;
   
   
@@ -24,11 +24,13 @@ h1 {
   font: bold;
   text-align: center;
   justify-content: center;
+  border: 1px solid;
 }
 
 #city-field{
   /* background-color: blue; */
   padding: 20px;
+  border: 1px solid;
 
 
 }
@@ -36,36 +38,62 @@ h1 {
 #temperature{
   padding: 5px;
   background-color: rgb(251, 175, 33);
+  border: 1px solid;
 }
 
-#temperature-field-1{
-  padding: 10px;
-  background-color: blue;
+#temperature-field {
+  padding: 20px;
+  /* background-color: aqua; */
+}
+
+#temperature-field-1 {
+  /* padding: 20px; */
+  /* background-color: blue; */
+  border: 1px solid;
+  display: flex;
+  /* text-align: center; */
+  justify-content: center;
+  
 }
 
 #temperature-field-2{
-  padding: 10px;
-  background-color: red;
+  /* background-color: red; */
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  
 }
 
 #temperature-field-3{
-  padding: 10px;
-  background-color: yellow;
+  /* padding: 10px; */
+  /* background-color: yellow; */
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
 }
 
 #conditions{
   padding: 5px;
   background-color: rgb(251, 175, 33);
+  border: 1px solid;
 }
 
 #condition-field{
   padding: 20px;
   /* background-color: blue; */
+  border: 1px solid;
 }
 
 #other-info{
   padding: 5px;
   background-color: rgb(251, 175, 33);
+  border: 1px solid;
+}
+
+#info-field{
+  padding: 98px;
+  border: 1px solid;
+
 }
 
 
@@ -74,7 +102,7 @@ body{
   padding-top: 90px;
   /* margin: auto; */
   /* border: black; */
-  background-color: #8BC6EC;
+  background-color: white;
   /* background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%); */
 
   
