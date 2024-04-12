@@ -20,7 +20,7 @@ h1 {
 #city-box{
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: rgb(251, 175, 33);
+  background-color: rgb(255, 190, 71);
   font: bold;
   text-align: center;
   justify-content: center;
@@ -37,7 +37,7 @@ h1 {
 
 #temperature{
   padding: 5px;
-  background-color: rgb(251, 175, 33);
+  background-color:  rgb(255, 190, 71);
   border: 1px solid;
 }
 
@@ -74,7 +74,7 @@ h1 {
 
 #conditions{
   padding: 5px;
-  background-color: rgb(251, 175, 33);
+  background-color:  rgb(255, 190, 71);
   border: 1px solid;
 }
 
@@ -86,7 +86,7 @@ h1 {
 
 #other-info{
   padding: 5px;
-  background-color: rgb(251, 175, 33);
+  background-color:  rgb(255, 190, 71);
   border: 1px solid;
 }
 
