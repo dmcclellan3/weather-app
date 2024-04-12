@@ -10,6 +10,7 @@ const conditionField = document.getElementById("condition-field")
 const infoField = document.getElementById("info-field")
 const weatherIcon = document.getElementById("weather-icon")
 
+
 weatherBtn.addEventListener("click", () => {
 
     getWeather(zipCodeInsert.value)
@@ -17,6 +18,7 @@ weatherBtn.addEventListener("click", () => {
     
 
 })
+
 
 function getWeather (zipCode) {
     axios.get(`https://api.openweathermap.org/data/2.5/weather?zip=${zipCode},US&appid=8d8a35e78ec3babb4db1abb8150ab7e4`)
@@ -29,7 +31,7 @@ function getWeather (zipCode) {
             fahrenheitField.textContent = `${Math.round((((temp - 273.15) * 1.8) + 32))}F`
             celsiusField.textContent = `${Math.round((temp - 273.15))}C`
             conditionField.textContent = response.data.weather[0].description
-            // weatherIcon.textContent = "https://openweathermap.org/img/wn/`${04n}`@2x.png"
+            weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)
             
         })
         .catch(error => {
