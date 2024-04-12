@@ -8,6 +8,7 @@ const celsiusField = document.getElementById("temperature-field-2")
 const fahrenheitField = document.getElementById("temperature-field-3")
 const conditionField = document.getElementById("condition-field")
 const infoField = document.getElementById("info-field")
+const weatherIcon = document.getElementById("weather-icon")
 
 weatherBtn.addEventListener("click", () => {
 
@@ -28,6 +29,7 @@ function getWeather (zipCode) {
             fahrenheitField.textContent = `${Math.round((((temp - 273.15) * 1.8) + 32))}F`
             celsiusField.textContent = `${Math.round((temp - 273.15))}C`
             conditionField.textContent = response.data.weather[0].description
+            // weatherIcon.textContent = "https://openweathermap.org/img/wn/`${04n}`@2x.png"
             
         })
         .catch(error => {
