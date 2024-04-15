@@ -1,3 +1,105 @@
 h1 {
-  color: pink;
+  color: black;
+  text-align: center;
+}
+.flex-container {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  background-color: white;
+  padding: 15px 15px 15px 15px; 
+  margin: auto;
+  text-align: center;
+  border: 1px;
+  border-style: dashed;
+}
+
+
+#city-box{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgb(254, 196, 87);
+  font: bold;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid;
+}
+
+#city-field{
+  padding: 20px;
+  border: 1px solid;
+
+
+}
+
+#temperature{
+  padding: 5px;
+  background-color: rgb(254, 196, 87);
+  border: 1px solid;
+}
+
+#temperature-field {
+  padding: 20px;
+}
+
+#temperature-field-1 {
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  
+}
+
+#temperature-field-2{
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  
+}
+
+#temperature-field-3{
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+}
+
+#conditions{
+  padding: 5px;
+  background-color: rgb(254, 196, 87);
+  border: 1px solid;
+}
+
+#condition-field{
+  padding: 20px;
+  border: 1px solid;
+}
+
+#other-info{
+  padding: 5px;
+  background-color: rgb(254, 196, 87);
+  border: 1px solid;
+}
+
+#info-field{
+  padding: 98px;
+  border: 1px solid;
+
+}
+
+button{
+  background-color: rgb(80, 208, 166);
+  padding-left: 20px;
+}
+
+
+
+body{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 30px;
+  border: 20px;
+  background-color: white;
+  
 }
